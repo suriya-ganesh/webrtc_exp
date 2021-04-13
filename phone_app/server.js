@@ -32,7 +32,9 @@ app.get("/", (request, response) => {
 });
 
 server.listen(port);
-httpsServer.listen(443);
+httpsServer.listen(443, function(){
+    console.log("server running at https://IP_ADDRESS:8001/")
+});
 console.log('Listening on: ' + port);
 
 
