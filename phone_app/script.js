@@ -3,6 +3,7 @@ const peer = new Peer(''+Math.floor(Math.random()*2**18).toString(36).padStart(4
     debug: 1,
     path: '/myapp'
 });
+console.log(location.hostname)
 
 window.peer = peer;
 
